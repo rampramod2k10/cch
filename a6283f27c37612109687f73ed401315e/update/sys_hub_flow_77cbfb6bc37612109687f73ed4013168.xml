@@ -1,0 +1,2436 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=48000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>566f128a774311107ac1a25c8d5a99b6</copied_from>
+        <copied_from_name>Process Attachment using DI</copied_from_name>
+        <description/>
+        <internal_name>chh__process_attachment_using_edge</internal_name>
+        <label_cache>[{"name":"subflow.di_task_definition","label":"Input➛DI Task Definition","reference":"sys_di_task_definition","reference_display":"Use Case","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2ceab4ac-905b-401e-826c-112ee2c2b6ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"b11222a3-9a53-4943-9349-21217ca85f21.task_id","label":"2 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"subflow.attachment_record","label":"Input➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d8c4b713-cb45-438b-8950-d9da6a21bab1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"6236a662-4823-4e9d-b461-9291d4597c45.record.sys_id","label":"1 - Create Record➛Invoice Stage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_ap_ic_invoice_stage","column_name":"sys_id"},{"name":"6236a662-4823-4e9d-b461-9291d4597c45.record","label":"1 - Create Record➛Invoice Stage Record","reference":"sn_ap_ic_invoice_stage","reference_display":"Invoice Stage Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6236a662-4823-4e9d-b461-9291d4597c45.table_name","label":"1 - Create Record➛Invoice Stage Table","reference":"sn_ap_ic_invoice_stage","reference_display":"Invoice Stage Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.di_task_name","label":"Input➛DI Task Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"023d8d8f-b682-49b5-b8a1-41b4d6fd1d56","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>7bfbb3abc37612109687f73ed4013153</master_snapshot>
+        <name>CCH - Process Attachment using EDGE</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77cbfb6bc37612109687f73ed4013168</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>CCH - Process Attachment using EDGE</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name>sys_hub_flow_77cbfb6bc37612109687f73ed4013168</sys_update_name>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:36:58</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_variable_value action="delete_multiple" query="document_key=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168^id=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=77cbfb6bc37612109687f73ed4013168^sys_idNOT IN73cbfb6bc37612109687f73ed4013169"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>77cbfb6bc37612109687f73ed4013168</id>
+        <name>CHH - Process Attachment using EDGE</name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>73cbfb6bc37612109687f73ed4013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=73cbfb6bc37612109687f73ed4013169"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=77cbfb6bc37612109687f73ed4013168^sys_idNOT IN73cbfb6bc37612109687f73ed4013174,77cbfb6bc37612109687f73ed401317a,b7cbfb6bc37612109687f73ed401317e,f3cbfb6bc37612109687f73ed4013170,f3cbfb6bc37612109687f73ed4013177"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=955202ae-a8fe-4e2a-a165-6923c6d7e9bb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_source_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Invoice Source Table</label>
+        <mandatory>false</mandatory>
+        <max_length>80</max_length>
+        <model display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</model>
+        <model_id>77cbfb6bc37612109687f73ed4013168</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>73cbfb6bc37612109687f73ed4013174</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73cbfb6bc37612109687f73ed4013174"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=d8c4b713-cb45-438b-8950-d9da6a21bab1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_attachment</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Attachment Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</model>
+        <model_id>77cbfb6bc37612109687f73ed4013168</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_attachment">sys_attachment</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>77cbfb6bc37612109687f73ed401317a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=77cbfb6bc37612109687f73ed401317a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=2ceab4ac-905b-401e-826c-112ee2c2b6ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_di_task_definition</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>di_task_definition</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>DI Task Definition</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</model>
+        <model_id>77cbfb6bc37612109687f73ed4013168</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_di_task_definition">sys_di_task_definition</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>b7cbfb6bc37612109687f73ed401317e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b7cbfb6bc37612109687f73ed401317e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=023d8d8f-b682-49b5-b8a1-41b4d6fd1d56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>di_task_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>DI Task Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</model>
+        <model_id>77cbfb6bc37612109687f73ed4013168</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>f3cbfb6bc37612109687f73ed4013170</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f3cbfb6bc37612109687f73ed4013170"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID,uiUniqueId=4a5ee4c6-dfae-44a3-bbb5-52b4046c3f67</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>invoice_source_table</dependent>
+        <dependent_on_field>invoice_source_table</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_source_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Invoice Source Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</model>
+        <model_id>77cbfb6bc37612109687f73ed4013168</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>f3cbfb6bc37612109687f73ed4013177</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f3cbfb6bc37612109687f73ed4013177"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=77cbfb6bc37612109687f73ed4013168^sys_idNOT IN33cbfb6bc37612109687f73ed4013189,73cbfb6bc37612109687f73ed4013185"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=4340ab7d-80c5-41db-832f-13eca895dc6e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_ap_ic_invoice_stage</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_stage_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Invoice Stage Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</model>
+        <model_id>77cbfb6bc37612109687f73ed4013168</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_ap_ic_invoice_stage">sn_ap_ic_invoice_stage</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>33cbfb6bc37612109687f73ed4013189</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=33cbfb6bc37612109687f73ed4013189"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=73261190-8405-4f0c-8316-d26ce2e5f588</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>docintel_task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>DocIntel task</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</model>
+        <model_id>77cbfb6bc37612109687f73ed4013168</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>73cbfb6bc37612109687f73ed4013185</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73cbfb6bc37612109687f73ed4013185"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=77cbfb6bc37612109687f73ed4013168^sys_idNOT IN04dbfb6bc37612109687f73ed40131d3,0cdbfb6bc37612109687f73ed40131ac,0cdbfb6bc37612109687f73ed40131cd,48dbfb6bc37612109687f73ed4013197,d0acec3fc37a12109687f73ed40131be"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>04dbfb6bc37612109687f73ed40131d3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:36:58</sys_updated_on>
+        <ui_id>038411e1-1a26-49fa-ae96-980f065489ee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=04dbfb6bc37612109687f73ed40131d3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>04dbfb6bc37612109687f73ed40131d3</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>04dbfb6bc37612109687f73ed40131d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <value>sn_ap_ic_invoice_stage</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>04dbfb6bc37612109687f73ed40131d3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>40dbfb6bc37612109687f73ed40131d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <value>status=in_processing</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=04dbfb6bc37612109687f73ed40131d3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>04dbfb6bc37612109687f73ed40131d3</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>ccdbfb6bc37612109687f73ed40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>04dbfb6bc37612109687f73ed40131d3</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>48dbfb6bc37612109687f73ed40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>04dbfb6bc37612109687f73ed40131d3</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>0cdbfb6bc37612109687f73ed40131d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=04dbfb6bc37612109687f73ed40131d3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=04dbfb6bc37612109687f73ed40131d3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Move Attachment">7159823353cc10103a33ddeeff7b1216</action_type>
+        <action_type_parent display_value="Move Attachment">8445146a9353130079b5925cf67ffb61</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>0cdbfb6bc37612109687f73ed40131ac</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:36:58</sys_updated_on>
+        <ui_id>1c8b2f72-97c6-4c3a-aff2-1370a65545ca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0cdbfb6bc37612109687f73ed40131ac"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0cdbfb6bc37612109687f73ed40131ac</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>48dbfb6bc37612109687f73ed40131ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <value>sn_ap_ic_invoice_stage</value>
+        <variable display_value="Table">4a59823353cc10103a33ddeeff7b1222</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0cdbfb6bc37612109687f73ed40131ac"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_attachment_record</field>
+        <id>0cdbfb6bc37612109687f73ed40131ac</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>40dbfb6bc37612109687f73ed40131ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7159823353cc10103a33ddeeff7b1216</table>
+        <value>{{subflow.attachment_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0cdbfb6bc37612109687f73ed40131ac</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>04dbfb6bc37612109687f73ed40131ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7159823353cc10103a33ddeeff7b1216</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>0cdbfb6bc37612109687f73ed40131ac</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>c4dbfb6bc37612109687f73ed40131ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7159823353cc10103a33ddeeff7b1216</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0cdbfb6bc37612109687f73ed40131ac"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0cdbfb6bc37612109687f73ed40131ac"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
+        <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>0cdbfb6bc37612109687f73ed40131cd</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:36:58</sys_updated_on>
+        <ui_id>e3876041-3af7-461e-ab60-d496e068b175</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0cdbfb6bc37612109687f73ed40131cd"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_1ca82b5feb702110f2549bf12a522896^id=0cdbfb6bc37612109687f73ed40131cd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0cdbfb6bc37612109687f73ed40131cd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0cdbfb6bc37612109687f73ed40131cd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>48dbfb6bc37612109687f73ed4013197</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:36:58</sys_updated_on>
+        <ui_id>6236a662-4823-4e9d-b461-9291d4597c45</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=48dbfb6bc37612109687f73ed4013197"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>48dbfb6bc37612109687f73ed4013197</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>80dbfb6bc37612109687f73ed401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <value>sn_ap_ic_invoice_stage</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>48dbfb6bc37612109687f73ed4013197</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>c8dbfb6bc37612109687f73ed4013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <value>status=draft</value>
+        <variable display_value="Fields">6de09916c31332002841b63b12d3ae1b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1^id=48dbfb6bc37612109687f73ed4013197"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=48dbfb6bc37612109687f73ed4013197"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=48dbfb6bc37612109687f73ed4013197"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="CCH - DocIntel - Create a Document Task">e26bacbbc37a12109687f73ed4013118</action_type>
+        <action_type_parent display_value="CCH - DocIntel - Create a Document Task">92ba647bc37a12109687f73ed4013189</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:23:41</sys_created_on>
+        <sys_id>d0acec3fc37a12109687f73ed40131be</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:36:58</sys_updated_on>
+        <ui_id>5a1f37e0-49aa-4135-a08a-d671b7fea47d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d0acec3fc37a12109687f73ed40131be"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d0acec3fc37a12109687f73ed40131be</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:23:41</sys_created_on>
+        <sys_id>9cacec3fc37a12109687f73ed40131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:23:41</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD6e6bacbb477a12102236903b14653d1b":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD6e6bacbb477a12102236903b14653d1b.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Attachment IDs\",\"mandatory\":\"false\",\"child_name\":\"attachment_ids_child0\",\"uiUniqueId\":\"380fa3ae-1a0e-4ede-85b8-1bcf76d81ab3\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD6e6bacbb477a12102236903b14653d1b\",\"child_label\":\"Attachment IDs_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"992cc8ae-6491-4fc4-8c03-d7bfa2784217\"}"}},"complexObject":{"name$":"FD6e6bacbb477a12102236903b14653d1b","$COCollectionField":[""]},"serializationFormat":"JSON"}</value>
+        <variable display_value="Attachment IDs">6e6bacbbc37a12109687f73ed4013135</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d0acec3fc37a12109687f73ed40131be"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_ids</field>
+        <id>d0acec3fc37a12109687f73ed40131be</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:23:41</sys_created_on>
+        <sys_id>d0acec3fc37a12109687f73ed40131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:23:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>display_name</field>
+        <id>d0acec3fc37a12109687f73ed40131be</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:23:41</sys_created_on>
+        <sys_id>1cacec3fc37a12109687f73ed40131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:23:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value>{{subflow.di_task_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record_id</field>
+        <id>d0acec3fc37a12109687f73ed40131be</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:23:41</sys_created_on>
+        <sys_id>58acec3fc37a12109687f73ed40131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:23:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_table_name</field>
+        <id>d0acec3fc37a12109687f73ed40131be</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:23:41</sys_created_on>
+        <sys_id>94acec3fc37a12109687f73ed40131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:23:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d0acec3fc37a12109687f73ed40131be"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d0acec3fc37a12109687f73ed40131be"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=77cbfb6bc37612109687f73ed4013168^sys_idNOT INc8dbfb6bc37612109687f73ed401318f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">00dbfb6bc37612109687f73ed401318f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>docintel_task,invoice_stage_record</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>c8dbfb6bc37612109687f73ed401318f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:36:58</sys_updated_on>
+        <ui_id>ec5c77af-3274-445c-9d79-3da07428924b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c8dbfb6bc37612109687f73ed401318f"/>
+    <sys_element_mapping action="delete_multiple" query="id=c8dbfb6bc37612109687f73ed401318f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>docintel_task</field>
+        <id>c8dbfb6bc37612109687f73ed401318f</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>ccdbfb6bc37612109687f73ed4013192</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168</table>
+        <value>{{b11222a3-9a53-4943-9349-21217ca85f21.task_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>invoice_stage_record</field>
+        <id>c8dbfb6bc37612109687f73ed401318f</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:25</sys_created_on>
+        <sys_id>80dbfb6bc37612109687f73ed4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c8dbfb6bc37612109687f73ed401318f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c8dbfb6bc37612109687f73ed401318f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168^sys_idNOT IN37cbfb6bc37612109687f73ed4013176,3bcbfb6bc37612109687f73ed4013181,b3cbfb6bc37612109687f73ed4013173,b7cbfb6bc37612109687f73ed4013179,f7cbfb6bc37612109687f73ed401317d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_source_table</element>
+        <help/>
+        <hint/>
+        <label>Invoice Source Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>37cbfb6bc37612109687f73ed4013176</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>di_task_definition</element>
+        <help/>
+        <hint/>
+        <label>DI Task Definition</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>3bcbfb6bc37612109687f73ed4013181</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>di_task_name</element>
+        <help/>
+        <hint/>
+        <label>DI Task Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>b3cbfb6bc37612109687f73ed4013173</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_source_record</element>
+        <help/>
+        <hint/>
+        <label>Invoice Source Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>b7cbfb6bc37612109687f73ed4013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_record</element>
+        <help/>
+        <hint/>
+        <label>Attachment Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>f7cbfb6bc37612109687f73ed401317d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_77cbfb6bc37612109687f73ed4013168"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168^sys_idNOT IN73cbfb6bc37612109687f73ed4013188,f3cbfb6bc37612109687f73ed401318c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>docintel_task</element>
+        <help/>
+        <hint/>
+        <label>DocIntel task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>73cbfb6bc37612109687f73ed4013188</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_stage_record</element>
+        <help/>
+        <hint/>
+        <label>Invoice Stage Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:50:24</sys_created_on>
+        <sys_id>f3cbfb6bc37612109687f73ed401318c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:50:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_77cbfb6bc37612109687f73ed4013168"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=18582418000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>566f128a774311107ac1a25c8d5a99b6</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>chh__process_attachment_using_edge</internal_name>
+        <label_cache>[{"name":"subflow.di_task_name","label":"Input➛DI Task Name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"023d8d8f-b682-49b5-b8a1-41b4d6fd1d56","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"6236a662-4823-4e9d-b461-9291d4597c45.table_name","label":"1 - Create Record➛Invoice Stage Table","reference":"sn_ap_ic_invoice_stage","reference_display":"Invoice Stage","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6236a662-4823-4e9d-b461-9291d4597c45.record","label":"1 - Create Record➛Invoice Stage Record","reference":"sn_ap_ic_invoice_stage","reference_display":"Invoice Stage","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6236a662-4823-4e9d-b461-9291d4597c45.record.sys_id","label":"1 - Create Record➛Invoice Stage Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_ap_ic_invoice_stage","column_name":"sys_id"},{"name":"subflow.attachment_record","label":"Input➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d8c4b713-cb45-438b-8950-d9da6a21bab1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"b11222a3-9a53-4943-9349-21217ca85f21.task_id","label":"2 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"subflow.di_task_definition","label":"Input➛DI Task Definition","reference":"sys_di_task_definition","reference_display":"Use Case","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2ceab4ac-905b-401e-826c-112ee2c2b6ea","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>CHH - Process Attachment using EDGE</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7bfbb3abc37612109687f73ed4013153</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153^id=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7bfbb3abc37612109687f73ed4013153^sys_idNOT INf7fbb3abc37612109687f73ed4013154"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7bfbb3abc37612109687f73ed4013153</id>
+        <name>CHH - Process Attachment using EDGE</name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>f7fbb3abc37612109687f73ed4013154</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f7fbb3abc37612109687f73ed4013154"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7bfbb3abc37612109687f73ed4013153^sys_idNOT IN37fbb3abc37612109687f73ed4013187,73fbb3abc37612109687f73ed401317c,b7fbb3abc37612109687f73ed4013155,b7fbb3abc37612109687f73ed401316c,f3fbb3abc37612109687f73ed4013174"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=2ceab4ac-905b-401e-826c-112ee2c2b6ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_di_task_definition</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>di_task_definition</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>DI Task Definition</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</model>
+        <model_id>7bfbb3abc37612109687f73ed4013153</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_di_task_definition">sys_di_task_definition</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>37fbb3abc37612109687f73ed4013187</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=37fbb3abc37612109687f73ed4013187"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=d8c4b713-cb45-438b-8950-d9da6a21bab1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_attachment</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Attachment Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</model>
+        <model_id>7bfbb3abc37612109687f73ed4013153</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_attachment">sys_attachment</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>73fbb3abc37612109687f73ed401317c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=73fbb3abc37612109687f73ed401317c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=023d8d8f-b682-49b5-b8a1-41b4d6fd1d56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>di_task_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>DI Task Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</model>
+        <model_id>7bfbb3abc37612109687f73ed4013153</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>b7fbb3abc37612109687f73ed4013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b7fbb3abc37612109687f73ed4013155"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=table_name,uiTypeLabel=Table,uiUniqueId=955202ae-a8fe-4e2a-a165-6923c6d7e9bb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_source_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Invoice Source Table</label>
+        <mandatory>false</mandatory>
+        <max_length>80</max_length>
+        <model display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</model>
+        <model_id>7bfbb3abc37612109687f73ed4013153</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>b7fbb3abc37612109687f73ed401316c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b7fbb3abc37612109687f73ed401316c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID,uiUniqueId=4a5ee4c6-dfae-44a3-bbb5-52b4046c3f67</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>invoice_source_table</dependent>
+        <dependent_on_field>invoice_source_table</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_source_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Invoice Source Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</model>
+        <model_id>7bfbb3abc37612109687f73ed4013153</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>f3fbb3abc37612109687f73ed4013174</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f3fbb3abc37612109687f73ed4013174"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7bfbb3abc37612109687f73ed4013153^sys_idNOT IN77fbb3abc37612109687f73ed401319d,b3fbb3abc37612109687f73ed4013195"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=4340ab7d-80c5-41db-832f-13eca895dc6e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_ap_ic_invoice_stage</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_stage_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Invoice Stage Record</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</model>
+        <model_id>7bfbb3abc37612109687f73ed4013153</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_ap_ic_invoice_stage">sn_ap_ic_invoice_stage</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>77fbb3abc37612109687f73ed401319d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=77fbb3abc37612109687f73ed401319d"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=73261190-8405-4f0c-8316-d26ce2e5f588</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>docintel_task</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>DocIntel task</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</model>
+        <model_id>7bfbb3abc37612109687f73ed4013153</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>b3fbb3abc37612109687f73ed4013195</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b3fbb3abc37612109687f73ed4013195"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7bfbb3abc37612109687f73ed4013153^sys_idNOT IN080cf3abc37612109687f73ed4013102,3a0f6c33c3ba12109687f73ed4013110,840cb3abc37612109687f73ed40131f2,880cb3abc37612109687f73ed40131fb,cc0cb3abc37612109687f73ed40131d9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>080cf3abc37612109687f73ed4013102</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <ui_id>038411e1-1a26-49fa-ae96-980f065489ee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=080cf3abc37612109687f73ed4013102"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>080cf3abc37612109687f73ed4013102</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>040cf3abc37612109687f73ed4013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <value>sn_ap_ic_invoice_stage</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>080cf3abc37612109687f73ed4013102</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>400cf3abc37612109687f73ed4013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <value>status=in_processing</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=080cf3abc37612109687f73ed4013102"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>080cf3abc37612109687f73ed4013102</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>cc0cf3abc37612109687f73ed4013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>080cf3abc37612109687f73ed4013102</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>480cf3abc37612109687f73ed4013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>080cf3abc37612109687f73ed4013102</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>0c0cf3abc37612109687f73ed4013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=080cf3abc37612109687f73ed4013102"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=080cf3abc37612109687f73ed4013102"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="CCH - DocIntel - Create a Document Task">e26bacbbc37a12109687f73ed4013118</action_type>
+        <action_type_parent display_value="CCH - DocIntel - Create a Document Task">92ba647bc37a12109687f73ed4013189</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:34:15</sys_created_on>
+        <sys_id>3a0f6c33c3ba12109687f73ed4013110</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <ui_id>5a1f37e0-49aa-4135-a08a-d671b7fea47d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3a0f6c33c3ba12109687f73ed4013110"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3a0f6c33c3ba12109687f73ed4013110</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:34:15</sys_created_on>
+        <sys_id>760f6c33c3ba12109687f73ed4013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD6e6bacbb477a12102236903b14653d1b":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD6e6bacbb477a12102236903b14653d1b.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Attachment IDs\",\"mandatory\":\"false\",\"child_name\":\"attachment_ids_child0\",\"uiUniqueId\":\"380fa3ae-1a0e-4ede-85b8-1bcf76d81ab3\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD6e6bacbb477a12102236903b14653d1b\",\"child_label\":\"Attachment IDs_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"992cc8ae-6491-4fc4-8c03-d7bfa2784217\"}"}},"complexObject":{"name$":"FD6e6bacbb477a12102236903b14653d1b","$COCollectionField":[]},"serializationFormat":"JSON"}</value>
+        <variable display_value="Attachment IDs">6e6bacbbc37a12109687f73ed4013135</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3a0f6c33c3ba12109687f73ed4013110"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_ids</field>
+        <id>3a0f6c33c3ba12109687f73ed4013110</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:34:15</sys_created_on>
+        <sys_id>b60f6c33c3ba12109687f73ed4013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>display_name</field>
+        <id>3a0f6c33c3ba12109687f73ed4013110</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:34:15</sys_created_on>
+        <sys_id>f20f6c33c3ba12109687f73ed4013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value>{{subflow.di_task_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record_id</field>
+        <id>3a0f6c33c3ba12109687f73ed4013110</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:34:15</sys_created_on>
+        <sys_id>320f6c33c3ba12109687f73ed4013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_table_name</field>
+        <id>3a0f6c33c3ba12109687f73ed4013110</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 12:34:15</sys_created_on>
+        <sys_id>7e0f6c33c3ba12109687f73ed4013112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e26bacbbc37a12109687f73ed4013118</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.table_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3a0f6c33c3ba12109687f73ed4013110"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3a0f6c33c3ba12109687f73ed4013110"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Move Attachment">7159823353cc10103a33ddeeff7b1216</action_type>
+        <action_type_parent display_value="Move Attachment">8445146a9353130079b5925cf67ffb61</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>840cb3abc37612109687f73ed40131f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <ui_id>1c8b2f72-97c6-4c3a-aff2-1370a65545ca</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=840cb3abc37612109687f73ed40131f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>840cb3abc37612109687f73ed40131f2</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>cc0cb3abc37612109687f73ed40131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <value>sn_ap_ic_invoice_stage</value>
+        <variable display_value="Table">4a59823353cc10103a33ddeeff7b1222</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=840cb3abc37612109687f73ed40131f2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_attachment_record</field>
+        <id>840cb3abc37612109687f73ed40131f2</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>c40cb3abc37612109687f73ed40131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7159823353cc10103a33ddeeff7b1216</table>
+        <value>{{subflow.attachment_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>840cb3abc37612109687f73ed40131f2</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>880cb3abc37612109687f73ed40131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7159823353cc10103a33ddeeff7b1216</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>840cb3abc37612109687f73ed40131f2</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>4c0cb3abc37612109687f73ed40131f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7159823353cc10103a33ddeeff7b1216</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=840cb3abc37612109687f73ed40131f2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=840cb3abc37612109687f73ed40131f2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
+        <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>880cb3abc37612109687f73ed40131fb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <ui_id>e3876041-3af7-461e-ab60-d496e068b175</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=880cb3abc37612109687f73ed40131fb"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_1ca82b5feb702110f2549bf12a522896^id=880cb3abc37612109687f73ed40131fb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=880cb3abc37612109687f73ed40131fb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=880cb3abc37612109687f73ed40131fb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>cc0cb3abc37612109687f73ed40131d9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <ui_id>6236a662-4823-4e9d-b461-9291d4597c45</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cc0cb3abc37612109687f73ed40131d9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cc0cb3abc37612109687f73ed40131d9</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>840cb3abc37612109687f73ed40131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <value>sn_ap_ic_invoice_stage</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cc0cb3abc37612109687f73ed40131d9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>c00cb3abc37612109687f73ed40131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <value>status=draft</value>
+        <variable display_value="Fields">6de09916c31332002841b63b12d3ae1b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1^id=cc0cb3abc37612109687f73ed40131d9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cc0cb3abc37612109687f73ed40131d9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cc0cb3abc37612109687f73ed40131d9"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7bfbb3abc37612109687f73ed4013153^sys_idNOT INb3fbb3abc37612109687f73ed40131d0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">00dbfb6bc37612109687f73ed401318f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CHH - Process Attachment using EDGE">7bfbb3abc37612109687f73ed4013153</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>docintel_task,invoice_stage_record</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>b3fbb3abc37612109687f73ed40131d0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 12:34:15</sys_updated_on>
+        <ui_id>ec5c77af-3274-445c-9d79-3da07428924b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b3fbb3abc37612109687f73ed40131d0"/>
+    <sys_element_mapping action="delete_multiple" query="id=b3fbb3abc37612109687f73ed40131d0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>docintel_task</field>
+        <id>b3fbb3abc37612109687f73ed40131d0</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>080cb3abc37612109687f73ed40131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153</table>
+        <value>{{b11222a3-9a53-4943-9349-21217ca85f21.task_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>invoice_stage_record</field>
+        <id>b3fbb3abc37612109687f73ed40131d0</id>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>c80cb3abc37612109687f73ed40131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153</table>
+        <value>{{6236a662-4823-4e9d-b461-9291d4597c45.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b3fbb3abc37612109687f73ed40131d0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b3fbb3abc37612109687f73ed40131d0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7bfbb3abc37612109687f73ed4013153"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153^sys_idNOT IN33fbb3abc37612109687f73ed401318f,3bfbb3abc37612109687f73ed4013178,7ffbb3abc37612109687f73ed4013168,bbfbb3abc37612109687f73ed4013170,fbfbb3abc37612109687f73ed4013183"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>di_task_definition</element>
+        <help/>
+        <hint/>
+        <label>DI Task Definition</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>33fbb3abc37612109687f73ed401318f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_source_record</element>
+        <help/>
+        <hint/>
+        <label>Invoice Source Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>3bfbb3abc37612109687f73ed4013178</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>di_task_name</element>
+        <help/>
+        <hint/>
+        <label>DI Task Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>7ffbb3abc37612109687f73ed4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_source_table</element>
+        <help/>
+        <hint/>
+        <label>Invoice Source Table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>bbfbb3abc37612109687f73ed4013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_record</element>
+        <help/>
+        <hint/>
+        <label>Attachment Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>fbfbb3abc37612109687f73ed4013183</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7bfbb3abc37612109687f73ed4013153"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153^sys_idNOT IN3ffbb3abc37612109687f73ed4013199,7bfbb3abc37612109687f73ed40131a4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>docintel_task</element>
+        <help/>
+        <hint/>
+        <label>DocIntel task</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:13</sys_created_on>
+        <sys_id>3ffbb3abc37612109687f73ed4013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_stage_record</element>
+        <help/>
+        <hint/>
+        <label>Invoice Stage Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:14</sys_created_on>
+        <sys_id>7bfbb3abc37612109687f73ed40131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7bfbb3abc37612109687f73ed4013153"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>77cbfb6bc37612109687f73ed4013168</sys_id>
+        <latest_snapshot>7bfbb3abc37612109687f73ed4013153</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=77cbfb6bc37612109687f73ed4013168"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=77cbfb6bc37612109687f73ed4013168^sys_idNOT IN140cf3abc37612109687f73ed401315f"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@616139</plan>
+        <plan_id display_value="CCH - Process Attachment using EDGE">77cbfb6bc37612109687f73ed4013168</plan_id>
+        <snapshot>7bfbb3abc37612109687f73ed4013153</snapshot>
+        <sys_created_by>giorgian.vatra</sys_created_by>
+        <sys_created_on>2025-01-06 08:51:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>140cf3abc37612109687f73ed401315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>giorgian.vatra</sys_updated_by>
+        <sys_updated_on>2025-01-06 08:51:15</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>
