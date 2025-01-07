@@ -13,9 +13,9 @@
         <description>Moves an attachment to a target record. The source is an attachment record. You can dynamically add and configure fields for the record. Server-side validation rules are enforced (data policy, business rules, dictionary-defined mandatory fields), but UI policy does not apply.</description>
         <ih_action>false</ih_action>
         <internal_name>copy_attachment_to_invoice_stage_and_doc_intel_task</internal_name>
-        <label_cache>[{"name":"{{action.target_record}}","label":"action➛Target Record","type":"action","ref":"incident","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_attachment_record}}","label":"action➛Source Attachment Record","type":"action","ref":"sys_attachment","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.target_record}}","label":"action➛Target Record","type":"action","ref":"incident","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_attachment_record}}","label":"action➛Source Attachment Record","type":"action","ref":"sys_attachment","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.doctask_id}}","label":"action➛doctask ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.invstage_id}}","label":"action➛invstage ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_attachment_record.sys_id}}","label":"action➛Source Attachment Record➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.invoice_case_record}}","label":"action➛Invoice case record","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>6b6238b7c3ba12109687f73ed4013188</master_snapshot>
-        <name>Copy Attachment to Invoice Stage and Doc Intel Task</name>
+        <name>Copy Attachment to Invoice Stage and Doc Task</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -26,15 +26,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d6230b7c3ba12109687f73ed40131aa</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Copy Attachment to Invoice Stage and Doc Intel Task</sys_name>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Copy Attachment to Invoice Stage and Doc Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_8d6230b7c3ba12109687f73ed40131aa</sys_update_name>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:51:09</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:05:00</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -71,7 +71,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_8d6230b7c3ba12109687f73ed40131aa^id=8d6230b7c3ba12109687f73ed40131aa"/>
     <sys_hub_step_instance action="delete_multiple" query="action=8d6230b7c3ba12109687f73ed40131aa^sys_idNOT IN9d62b4b7c3ba12109687f73ed4013190"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Copy Attachment to Invoice Stage and Doc Intel Task">8d6230b7c3ba12109687f73ed40131aa</action>
+        <action display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</action>
         <cid>48ba6735-600d-4eeb-9abb-c73719684bec</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -87,10 +87,10 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:48:54</sys_created_on>
         <sys_id>9d62b4b7c3ba12109687f73ed4013190</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:50:56</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:04:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9d62b4b7c3ba12109687f73ed4013190"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -115,11 +115,21 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:48:54</sys_created_on>
         <sys_id>e562b4b7c3ba12109687f73ed40131a2</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:50:56</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:04:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-    
+// Specify the source record table and the target record table
+var sourceTable = 'sn_ap_cm_ap_case';  // Source table (e.g., 'incident')
+var targetTable1 = 'sn_ap_ic_invoice_stage';      // Target table (e.g., 'task')
+var targetTable2 = 'sys_di_task'; 
+var sourceRecordSysId = inputs.invoice_case_record; // Replace with the source record Sys ID
+var targetRecordSysId1 = inputs.invstage_id; // Replace with the target record Sys ID
+var targetRecordSysId2 = inputs.doctask_id; 
+
+GlideSysAttachment.copy(sourceTable, sourceRecordSysId, targetTable1, targetRecordSysId1);
+GlideSysAttachment.copy(sourceTable, sourceRecordSysId, targetTable2, targetRecordSysId2);
+
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -137,6 +147,30 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>9d62b4b7c3ba12109687f73ed4013190</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:04</sys_created_on>
+        <sys_id>247af8f3c3fa12109687f73ed40131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:04</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</table>
+        <value>{{action.source_attachment_record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>doctask_id</field>
+        <id>9d62b4b7c3ba12109687f73ed4013190</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:04</sys_created_on>
+        <sys_id>a87af8f3c3fa12109687f73ed40131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:04</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</table>
+        <value>{{action.doctask_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>fromObj</field>
         <id>9d62b4b7c3ba12109687f73ed4013190</id>
         <sys_created_by>abinav.ramesh</sys_created_by>
@@ -147,6 +181,30 @@
         <sys_updated_on>2025-01-06 12:48:54</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</table>
         <value>{{action.source_attachment_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>invoice_case_record</field>
+        <id>9d62b4b7c3ba12109687f73ed4013190</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:04</sys_created_on>
+        <sys_id>6c7af8f3c3fa12109687f73ed40131c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:04</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</table>
+        <value>{{action.invoice_case_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>invstage_id</field>
+        <id>9d62b4b7c3ba12109687f73ed4013190</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:04</sys_created_on>
+        <sys_id>e47af8f3c3fa12109687f73ed40131ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:04</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</table>
+        <value>{{action.invstage_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
@@ -186,7 +244,7 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=9d62b4b7c3ba12109687f73ed4013190"/>
     <sys_translated_text action="delete_multiple" query="documentkey=9d62b4b7c3ba12109687f73ed4013190"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=9d62b4b7c3ba12109687f73ed4013190^sys_idNOT IN1562b4b7c3ba12109687f73ed4013194"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9d62b4b7c3ba12109687f73ed4013190^sys_idNOT IN207af8f3c3fa12109687f73ed4013175,a07af8f3c3fa12109687f73ed4013178,a47af8f3c3fa12109687f73ed401317a,a87af8f3c3fa12109687f73ed401317c"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -215,7 +273,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>fromObj</element>
+        <element>doctask_id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -248,8 +306,174 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>abinav.ramesh</sys_created_by>
-        <sys_created_on>2025-01-06 12:48:54</sys_created_on>
-        <sys_id>1562b4b7c3ba12109687f73ed4013194</sys_id>
+        <sys_created_on>2025-01-06 13:24:03</sys_created_on>
+        <sys_id>207af8f3c3fa12109687f73ed4013175</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invstage_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Move attachment to Target Table">9d62b4b7c3ba12109687f73ed4013190</model>
+        <model_id>9d62b4b7c3ba12109687f73ed4013190</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:03</sys_created_on>
+        <sys_id>a07af8f3c3fa12109687f73ed4013178</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Move attachment to Target Table">9d62b4b7c3ba12109687f73ed4013190</model>
+        <model_id>9d62b4b7c3ba12109687f73ed4013190</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:04</sys_created_on>
+        <sys_id>a47af8f3c3fa12109687f73ed401317a</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -257,7 +481,90 @@
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:49:02</sys_updated_on>
+        <sys_updated_on>2025-01-06 13:25:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_case_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Move attachment to Target Table">9d62b4b7c3ba12109687f73ed4013190</model>
+        <model_id>9d62b4b7c3ba12109687f73ed4013190</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9d62b4b7c3ba12109687f73ed4013190</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:04</sys_created_on>
+        <sys_id>a87af8f3c3fa12109687f73ed401317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -273,7 +580,259 @@
     <sys_hub_step_ext_output action="delete_multiple" query="model=9d62b4b7c3ba12109687f73ed4013190"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9d62b4b7c3ba12109687f73ed4013190"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_9d62b4b7c3ba12109687f73ed4013190"/>
-    <sys_hub_action_input action="delete_multiple" query="model=8d6230b7c3ba12109687f73ed40131aa^sys_idNOT INd162b4b7c3ba12109687f73ed4013153"/>
+    <sys_hub_action_input action="delete_multiple" query="model=8d6230b7c3ba12109687f73ed40131aa^sys_idNOT IN907af8f3c3fa12109687f73ed401315d,b056fc7fc3ba12109687f73ed4013148,bc56f47fc3ba12109687f73ed40131c7,d162b4b7c3ba12109687f73ed4013153"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=36752d8c-8f1c-426b-95da-f7b7598ec69c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_case_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Invoice case record</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</model>
+        <model_id>8d6230b7c3ba12109687f73ed40131aa</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:03</sys_created_on>
+        <sys_id>907af8f3c3fa12109687f73ed401315d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=907af8f3c3fa12109687f73ed401315d"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=19a04bee-aee0-44ee-941a-47196b86538d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invstage_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>invstage ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</model>
+        <model_id>8d6230b7c3ba12109687f73ed40131aa</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:03</sys_created_on>
+        <sys_id>b056fc7fc3ba12109687f73ed4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b056fc7fc3ba12109687f73ed4013148"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=39a79e9b-cc0c-4aa5-a50c-f5b86a05bc21</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>doctask_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>doctask ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</model>
+        <model_id>8d6230b7c3ba12109687f73ed40131aa</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:03</sys_created_on>
+        <sys_id>bc56f47fc3ba12109687f73ed40131c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc56f47fc3ba12109687f73ed40131c7"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -314,12 +873,12 @@
         <label>Source Attachment Record</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Copy Attachment to Invoice Stage and Doc Intel Task">8d6230b7c3ba12109687f73ed40131aa</model>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</model>
         <model_id>8d6230b7c3ba12109687f73ed40131aa</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa</name>
         <next_element/>
-        <order>1</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -337,14 +896,14 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:48:53</sys_created_on>
         <sys_id>d162b4b7c3ba12109687f73ed4013153</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:48:53</sys_updated_on>
+        <sys_updated_on>2025-01-06 13:06:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -401,7 +960,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Copy Attachment to Invoice Stage and Doc Intel Task">8d6230b7c3ba12109687f73ed40131aa</model>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</model>
         <model_id>8d6230b7c3ba12109687f73ed40131aa</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_8d6230b7c3ba12109687f73ed40131aa</name>
@@ -424,14 +983,14 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:48:54</sys_created_on>
         <sys_id>2d62b4b7c3ba12109687f73ed40131ab</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:51:08</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:04:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -458,7 +1017,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2162b4b7c3ba12109687f73ed40131a6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -466,7 +1025,7 @@
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:51:07</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:04:59</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -511,7 +1070,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Copy Attachment to Invoice Stage and Doc Intel Task">8d6230b7c3ba12109687f73ed40131aa</model>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</model>
         <model_id>8d6230b7c3ba12109687f73ed40131aa</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_8d6230b7c3ba12109687f73ed40131aa</name>
@@ -559,7 +1118,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=8d6230b7c3ba12109687f73ed40131aa"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=8d6230b7c3ba12109687f73ed40131aa^sys_idNOT INe962b4b7c3ba12109687f73ed40131b4"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Copy Attachment to Invoice Stage and Doc Intel Task">8d6230b7c3ba12109687f73ed40131aa</action_type_id>
+        <action_type_id display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</action_type_id>
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:48:54</sys_created_on>
         <sys_id>e962b4b7c3ba12109687f73ed40131b4</sys_id>
@@ -568,7 +1127,7 @@
         <sys_updated_on>2025-01-06 12:48:54</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e962b4b7c3ba12109687f73ed40131b4"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa^sys_idNOT IN5162b4b7c3ba12109687f73ed4013157"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa^sys_idNOT IN5162b4b7c3ba12109687f73ed4013157,7056fc7fc3ba12109687f73ed401314b,7c56f47fc3ba12109687f73ed40131cb,d87af8f3c3fa12109687f73ed4013160"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>source_attachment_record</element>
         <help/>
@@ -589,6 +1148,75 @@
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
         <sys_updated_on>2025-01-06 12:48:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invstage_id</element>
+        <help/>
+        <hint/>
+        <label>invstage ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:03</sys_created_on>
+        <sys_id>7056fc7fc3ba12109687f73ed401314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>doctask_id</element>
+        <help/>
+        <hint/>
+        <label>doctask ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:03</sys_created_on>
+        <sys_id>7c56f47fc3ba12109687f73ed40131cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_case_record</element>
+        <help/>
+        <hint/>
+        <label>Invoice case record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_8d6230b7c3ba12109687f73ed40131aa</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:24:03</sys_created_on>
+        <sys_id>d87af8f3c3fa12109687f73ed4013160</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:24:03</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -643,19 +1271,19 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_8d6230b7c3ba12109687f73ed40131aa"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=8d6230b7c3ba12109687f73ed40131aa^sys_idNOT INc07278b7c3ba12109687f73ed4013167"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Copy Attachment to Invoice Stage and Doc Intel Task">8d6230b7c3ba12109687f73ed40131aa</action_id>
+        <action_id display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c07278b7c3ba12109687f73ed4013167","name":"plan","plan_signature":null}}</plan>
-        <snapshot>a6e274f7c3ba12109687f73ed401313e</snapshot>
+        <snapshot>8f81d5b7c37e12109687f73ed4013106</snapshot>
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:49:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c07278b7c3ba12109687f73ed4013167</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:51:10</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:05:01</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -669,19 +1297,19 @@
         <copied_from_name/>
         <description>Moves an attachment to a target record. The source is an attachment record. You can dynamically add and configure fields for the record. Server-side validation rules are enforced (data policy, business rules, dictionary-defined mandatory fields), but UI policy does not apply.</description>
         <internal_name>copy_attachment_to_invoice_stage_and_doc_intel_task</internal_name>
-        <label_cache>[{"name":"{{action.target_record}}","label":"action➛Target Record","type":"action","ref":"incident","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_attachment_record}}","label":"action➛Source Attachment Record","type":"action","ref":"sys_attachment","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"{{action.target_record}}","label":"action➛Target Record","type":"action","ref":"incident","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_attachment_record}}","label":"action➛Source Attachment Record","type":"action","ref":"sys_attachment","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.table}}","label":"action➛Table","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.doctask_id}}","label":"action➛doctask ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.invstage_id}}","label":"action➛invstage ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.source_attachment_record.sys_id}}","label":"action➛Source Attachment Record➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.invoice_case_record}}","label":"action➛Invoice case record","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
-        <name>Copy Attachment to Invoice Stage and Doc Intel Task</name>
+        <name>Copy Attachment to Invoice Stage and Doc Task</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Copy Attachment to Invoice Stage and Doc Intel Task">8d6230b7c3ba12109687f73ed40131aa</parent_action>
+        <parent_action display_value="Copy Attachment to Invoice Stage and Doc Task">8d6230b7c3ba12109687f73ed40131aa</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:49:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6b6238b7c3ba12109687f73ed4013188</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -689,7 +1317,7 @@
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:49:03</sys_updated_on>
+        <sys_updated_on>2025-01-06 13:25:45</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -726,7 +1354,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_6b6238b7c3ba12109687f73ed4013188^id=6b6238b7c3ba12109687f73ed4013188"/>
     <sys_hub_step_instance action="delete_multiple" query="action=6b6238b7c3ba12109687f73ed4013188^sys_idNOT IN376238b7c3ba12109687f73ed40131bb"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Copy Attachment to Invoice Stage and Doc Intel Task">6b6238b7c3ba12109687f73ed4013188</action>
+        <action display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</action>
         <cid>48ba6735-600d-4eeb-9abb-c73719684bec</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -742,10 +1370,10 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:49:03</sys_created_on>
         <sys_id>376238b7c3ba12109687f73ed40131bb</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:51:09</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:05:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=376238b7c3ba12109687f73ed40131bb"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -756,11 +1384,21 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:49:03</sys_created_on>
         <sys_id>736238b7c3ba12109687f73ed40131cd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:51:09</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:05:00</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-    
+// Specify the source record table and the target record table
+var sourceTable = 'sn_ap_cm_ap_case';  // Source table (e.g., 'incident')
+var targetTable1 = 'sn_ap_ic_invoice_stage';      // Target table (e.g., 'task')
+var targetTable2 = 'sys_di_task'; 
+var sourceRecordSysId = inputs.invoice_case_record; // Replace with the source record Sys ID
+var targetRecordSysId1 = inputs.invstage_id; // Replace with the target record Sys ID
+var targetRecordSysId2 = inputs.doctask_id; 
+
+GlideSysAttachment.copy(sourceTable, sourceRecordSysId, targetTable1, targetRecordSysId1);
+GlideSysAttachment.copy(sourceTable, sourceRecordSysId, targetTable2, targetRecordSysId2);
+
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
@@ -792,6 +1430,30 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>376238b7c3ba12109687f73ed40131bb</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>a9da3437c3fa12109687f73ed401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</table>
+        <value>{{action.source_attachment_record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>doctask_id</field>
+        <id>376238b7c3ba12109687f73ed40131bb</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>21da3437c3fa12109687f73ed401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</table>
+        <value>{{action.doctask_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>fromObj</field>
         <id>376238b7c3ba12109687f73ed40131bb</id>
         <sys_created_by>abinav.ramesh</sys_created_by>
@@ -802,6 +1464,30 @@
         <sys_updated_on>2025-01-06 12:49:03</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</table>
         <value>{{action.source_attachment_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>invoice_case_record</field>
+        <id>376238b7c3ba12109687f73ed40131bb</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>e5da3437c3fa12109687f73ed401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</table>
+        <value>{{action.invoice_case_record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>invstage_id</field>
+        <id>376238b7c3ba12109687f73ed40131bb</id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>6dda3437c3fa12109687f73ed401319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</table>
+        <value>{{action.invstage_id}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
@@ -841,7 +1527,90 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=376238b7c3ba12109687f73ed40131bb"/>
     <sys_translated_text action="delete_multiple" query="documentkey=376238b7c3ba12109687f73ed40131bb"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=376238b7c3ba12109687f73ed40131bb^sys_idNOT INbb6238b7c3ba12109687f73ed40131be"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=376238b7c3ba12109687f73ed40131bb^sys_idNOT IN29da3437c3fa12109687f73ed4013189,65da3437c3fa12109687f73ed4013182,6dda3437c3fa12109687f73ed401318c,e1da3437c3fa12109687f73ed4013186"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>attachment_id</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Move attachment to Target Table">376238b7c3ba12109687f73ed40131bb</model>
+        <model_id>376238b7c3ba12109687f73ed40131bb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>29da3437c3fa12109687f73ed4013189</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -870,7 +1639,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>fromObj</element>
+        <element>doctask_id</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -879,7 +1648,7 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>fromObj</label>
+        <label>doctask_id</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Move attachment to Target Table">376238b7c3ba12109687f73ed40131bb</model>
@@ -903,8 +1672,8 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>abinav.ramesh</sys_created_by>
-        <sys_created_on>2025-01-06 12:49:03</sys_created_on>
-        <sys_id>bb6238b7c3ba12109687f73ed40131be</sys_id>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>65da3437c3fa12109687f73ed4013182</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -912,7 +1681,173 @@
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:49:03</sys_updated_on>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_case_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>invoice_case_record</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Move attachment to Target Table">376238b7c3ba12109687f73ed40131bb</model>
+        <model_id>376238b7c3ba12109687f73ed40131bb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>6dda3437c3fa12109687f73ed401318c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invstage_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>invstage_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Move attachment to Target Table">376238b7c3ba12109687f73ed40131bb</model>
+        <model_id>376238b7c3ba12109687f73ed40131bb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_376238b7c3ba12109687f73ed40131bb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>e1da3437c3fa12109687f73ed4013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -928,7 +1863,7 @@
     <sys_hub_step_ext_output action="delete_multiple" query="model=376238b7c3ba12109687f73ed40131bb"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=376238b7c3ba12109687f73ed40131bb"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_376238b7c3ba12109687f73ed40131bb"/>
-    <sys_hub_action_input action="delete_multiple" query="model=6b6238b7c3ba12109687f73ed4013188^sys_idNOT IN2f6238b7c3ba12109687f73ed4013198"/>
+    <sys_hub_action_input action="delete_multiple" query="model=6b6238b7c3ba12109687f73ed4013188^sys_idNOT IN2f6238b7c3ba12109687f73ed4013198,5dda3437c3fa12109687f73ed4013179,e176f0bfc3ba12109687f73ed4013109,ed76f0bfc3ba12109687f73ed4013104"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -969,12 +1904,12 @@
         <label>Source Attachment Record</label>
         <mandatory>true</mandatory>
         <max_length>32</max_length>
-        <model display_value="Copy Attachment to Invoice Stage and Doc Intel Task">6b6238b7c3ba12109687f73ed4013188</model>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</model>
         <model_id>6b6238b7c3ba12109687f73ed4013188</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188</name>
         <next_element/>
-        <order>1</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -992,14 +1927,14 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:49:03</sys_created_on>
         <sys_id>2f6238b7c3ba12109687f73ed4013198</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:49:03</sys_updated_on>
+        <sys_updated_on>2025-01-06 13:06:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1013,6 +1948,258 @@
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2f6238b7c3ba12109687f73ed4013198"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=36752d8c-8f1c-426b-95da-f7b7598ec69c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invoice_case_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Invoice case record</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</model>
+        <model_id>6b6238b7c3ba12109687f73ed4013188</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>5dda3437c3fa12109687f73ed4013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5dda3437c3fa12109687f73ed4013179"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=19a04bee-aee0-44ee-941a-47196b86538d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>invstage_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>invstage ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</model>
+        <model_id>6b6238b7c3ba12109687f73ed4013188</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:40</sys_created_on>
+        <sys_id>e176f0bfc3ba12109687f73ed4013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e176f0bfc3ba12109687f73ed4013109"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=39a79e9b-cc0c-4aa5-a50c-f5b86a05bc21</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>doctask_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>doctask ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</model>
+        <model_id>6b6238b7c3ba12109687f73ed4013188</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:40</sys_created_on>
+        <sys_id>ed76f0bfc3ba12109687f73ed4013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ed76f0bfc3ba12109687f73ed4013104"/>
     <sys_hub_action_output action="delete_multiple" query="model=6b6238b7c3ba12109687f73ed4013188^sys_idNOT IN3f6238b7c3ba12109687f73ed40131d0,7b6238b7c3ba12109687f73ed40131e1"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1056,7 +2243,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Copy Attachment to Invoice Stage and Doc Intel Task">6b6238b7c3ba12109687f73ed4013188</model>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</model>
         <model_id>6b6238b7c3ba12109687f73ed4013188</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_6b6238b7c3ba12109687f73ed4013188</name>
@@ -1143,7 +2330,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Copy Attachment to Invoice Stage and Doc Intel Task">6b6238b7c3ba12109687f73ed4013188</model>
+        <model display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</model>
         <model_id>6b6238b7c3ba12109687f73ed4013188</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_6b6238b7c3ba12109687f73ed4013188</name>
@@ -1166,14 +2353,14 @@
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:49:04</sys_created_on>
         <sys_id>7b6238b7c3ba12109687f73ed40131e1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
         <sys_updated_by>abinav.ramesh</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:51:09</sys_updated_on>
+        <sys_updated_on>2025-01-06 15:05:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1191,7 +2378,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=6b6238b7c3ba12109687f73ed4013188"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=6b6238b7c3ba12109687f73ed4013188^sys_idNOT IN3f6238b7c3ba12109687f73ed40131ea"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Copy Attachment to Invoice Stage and Doc Intel Task">6b6238b7c3ba12109687f73ed4013188</action_type_id>
+        <action_type_id display_value="Copy Attachment to Invoice Stage and Doc Task">6b6238b7c3ba12109687f73ed4013188</action_type_id>
         <sys_created_by>abinav.ramesh</sys_created_by>
         <sys_created_on>2025-01-06 12:49:04</sys_created_on>
         <sys_id>3f6238b7c3ba12109687f73ed40131ea</sys_id>
@@ -1200,7 +2387,76 @@
         <sys_updated_on>2025-01-06 12:49:04</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=3f6238b7c3ba12109687f73ed40131ea"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188^sys_idNOT INe36238b7c3ba12109687f73ed401319c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188^sys_idNOT IN2176f0bfc3ba12109687f73ed401310c,2576f0bfc3ba12109687f73ed4013108,99da3437c3fa12109687f73ed401317c,e36238b7c3ba12109687f73ed401319c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invstage_id</element>
+        <help/>
+        <hint/>
+        <label>invstage ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:40</sys_created_on>
+        <sys_id>2176f0bfc3ba12109687f73ed401310c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>doctask_id</element>
+        <help/>
+        <hint/>
+        <label>doctask ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:06:40</sys_created_on>
+        <sys_id>2576f0bfc3ba12109687f73ed4013108</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:06:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>invoice_case_record</element>
+        <help/>
+        <hint/>
+        <label>Invoice case record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_6b6238b7c3ba12109687f73ed4013188</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 13:25:46</sys_created_on>
+        <sys_id>99da3437c3fa12109687f73ed401317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 13:25:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>source_attachment_record</element>
         <help/>

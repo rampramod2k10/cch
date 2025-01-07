@@ -4,14 +4,14 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1152000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=104522000,viewActivatedIn=naturalLanguage</attributes>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from>e6ee10eac33e12109687f73ed4013110</copied_from>
         <copied_from_name>CHH - Invoice processing case fo</copied_from_name>
         <description/>
         <internal_name>chh__invoice_processing_case_for_invoice_email</internal_name>
-        <label_cache>[{"name":"Inbound Email_1.inbound_email.subject","label":"Trigger - Inbound Email➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject"},{"name":"Inbound Email_1.inbound_email.body_text","label":"Trigger - Inbound Email➛Email Record➛Body text","reference":"","reference_display":"Body text","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body_text"},{"name":"Inbound Email_1.inbound_email.body","label":"Trigger - Inbound Email➛Email Record➛Body","reference":"","reference_display":"Body","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body"},{"name":"Inbound Email_1.inbound_email.user_id.email","label":"Trigger - Inbound Email➛Email Record➛User ID➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Inbound Email_1.body_text","label":"Trigger - Inbound Email➛Body Text","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.subject","label":"Trigger - Inbound Email➛Subject","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.inbound_email.user","label":"Trigger - Inbound Email➛Email Record➛User","reference":"","reference_display":"User","type":"string","base_type":"string","parent_table_name":"sys_email","column_name":"user"},{"name":"Inbound Email_1.inbound_email","label":"Trigger - Inbound Email➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{}},{"name":"c9b8bd8b-0eaf-4911-93b0-24caa0ba9f2c.email_attachments","label":"7 - Look Up Email Attachments➛Email Attachment Records","reference":"sys_email_attachment","reference_display":"Email Attachment Records","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cfb124c2-8616-44c2-bd19-6405e53ca37e.item.attachment.content_type","label":"8 - For Each➛Email Attachment Record➛Attachment➛Content type","reference":"","reference_display":"Content type","type":"string","base_type":"string","parent_table_name":"sys_attachment","column_name":"content_type"},{"name":"cfb124c2-8616-44c2-bd19-6405e53ca37e.item.attachment","label":"8 - For Each➛Email Attachment Record➛Attachment","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","parent_table_name":"sys_email_attachment","column_name":"attachment"},{"name":"664c3577-6bf8-4537-9ce5-40ce786063ed.record","label":"10 - Create Record➛Invoice case Record","reference":"sn_ap_cm_ap_case","reference_display":"Invoice case Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Inbound Email_1.inbound_email.user_id","label":"Trigger - Inbound Email➛Email Record➛User ID","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_email","column_name":"user_id"},{"name":"flow_variable.caller_email","label":"Flow Variables➛Caller Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c58801a3-07d7-452c-9bea-df7d49c4c059"}}]</label_cache>
+        <label_cache>[{"name":"flow_variable.caller_email","label":"Flow Variables➛Caller Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c58801a3-07d7-452c-9bea-df7d49c4c059"}},{"name":"Inbound Email_1.inbound_email.user_id","label":"Trigger - Inbound Email➛Email Record➛User ID","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_email","column_name":"user_id"},{"name":"664c3577-6bf8-4537-9ce5-40ce786063ed.record","label":"10 - Create Record➛Invoice case Record","reference":"sn_ap_cm_ap_case","reference_display":"Invoice case","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cfb124c2-8616-44c2-bd19-6405e53ca37e.item.attachment","label":"8 - For Each➛Email Attachment Record➛Attachment","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","parent_table_name":"sys_email_attachment","column_name":"attachment"},{"name":"cfb124c2-8616-44c2-bd19-6405e53ca37e.item.attachment.content_type","label":"8 - For Each➛Email Attachment Record➛Attachment➛Content type","reference":"","reference_display":"Content type","type":"string","base_type":"string","parent_table_name":"sys_attachment","column_name":"content_type"},{"name":"c9b8bd8b-0eaf-4911-93b0-24caa0ba9f2c.email_attachments","label":"7 - Look Up Email Attachments➛Email Attachment Records","reference":"sys_email_attachment","reference_display":"Email Attachment","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Inbound Email_1.inbound_email","label":"Trigger - Inbound Email➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{}},{"name":"Inbound Email_1.inbound_email.user","label":"Trigger - Inbound Email➛Email Record➛User","reference":"","reference_display":"User","type":"string","base_type":"string","parent_table_name":"sys_email","column_name":"user"},{"name":"Inbound Email_1.subject","label":"Trigger - Inbound Email➛Subject","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.body_text","label":"Trigger - Inbound Email➛Body Text","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.inbound_email.user_id.email","label":"Trigger - Inbound Email➛Email Record➛User ID➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Inbound Email_1.inbound_email.body","label":"Trigger - Inbound Email➛Email Record➛Body","reference":"","reference_display":"Body","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body"},{"name":"Inbound Email_1.inbound_email.body_text","label":"Trigger - Inbound Email➛Email Record➛Body text","reference":"","reference_display":"Body text","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body_text"},{"name":"Inbound Email_1.inbound_email.subject","label":"Trigger - Inbound Email➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject"}]</label_cache>
         <master_snapshot>71ce37afc37612109687f73ed401318b</master_snapshot>
         <name>CCH - Invoice processing case for Invoice email</name>
         <natlang/>
@@ -23,22 +23,22 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>046afbe7c37612109687f73ed4013101</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>CCH - Invoice processing case for Invoice email</sys_name>
         <sys_overrides/>
         <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name>sys_hub_flow_046afbe7c37612109687f73ed4013101</sys_update_name>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:41</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:18</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=046afbe7c37612109687f73ed4013101"/>
@@ -57,11 +57,11 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d2ce77afc37612109687f73ed40131a6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:25</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <target_table/>
     </sys_flow_email_trigger>
     <sys_trigger_runner_mapping action="delete_multiple" query="identifier=046afbe7c37612109687f73ed4013101"/>
@@ -75,10 +75,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:10</sys_created_on>
         <sys_id>5c6afbe7c37612109687f73ed4013178</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -132,7 +132,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -194,14 +194,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>086afbe7c37612109687f73ed4013127</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -219,7 +219,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -278,14 +278,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>146afbe7c37612109687f73ed401312b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -303,7 +303,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -362,14 +362,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>186afbe7c37612109687f73ed4013137</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -387,7 +387,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -446,14 +446,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>546afbe7c37612109687f73ed401312e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -471,7 +471,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -530,14 +530,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>586afbe7c37612109687f73ed401313a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -555,7 +555,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -614,14 +614,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>946afbe7c37612109687f73ed4013131</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -639,7 +639,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference,uiTypeLabel=Reference</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -698,14 +698,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>d46afbe7c37612109687f73ed4013134</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -737,10 +737,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>186afbe7c37612109687f73ed401315f</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>c9b8bd8b-0eaf-4911-93b0-24caa0ba9f2c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=186afbe7c37612109687f73ed401315f"/>
@@ -774,10 +774,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>506afbe7c37612109687f73ed4013170</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:18</sys_updated_on>
         <ui_id>26af9bb7-9061-4495-b6f9-0c5d618c3dbc</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=506afbe7c37612109687f73ed4013170"/>
@@ -849,10 +849,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>586afbe7c37612109687f73ed4013165</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:18</sys_updated_on>
         <ui_id>664c3577-6bf8-4537-9ce5-40ce786063ed</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=586afbe7c37612109687f73ed4013165"/>
@@ -912,10 +912,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:10</sys_created_on>
         <sys_id>946afbe7c37612109687f73ed4013176</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:41</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:18</sys_updated_on>
         <ui_id>f6d7ba57-a924-4437-8f2b-f524469c1125</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=946afbe7c37612109687f73ed4013176"/>
@@ -1011,10 +1011,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>1c6afbe7c37612109687f73ed401314b</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>7a1e302c-af63-47fd-9ef2-418202b59b28</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1058,10 +1058,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>586afbe7c37612109687f73ed4013148</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>f44a56f4-67cf-496c-8531-3ebe56a94316</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1105,10 +1105,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>5c6afbe7c37612109687f73ed4013145</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>64cfaad9-c42e-40c5-91e3-7d4091a70c6e</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1140,10 +1140,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>946afbe7c37612109687f73ed4013141</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>1aa9edf6-0acb-4b3d-987d-61192204e133</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1187,10 +1187,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>d06afbe7c37612109687f73ed401314f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>c79683a7-34a4-4a20-bda2-eb7e708d5ac0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1222,10 +1222,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>d46afbe7c37612109687f73ed4013158</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:18</sys_updated_on>
         <ui_id>be624c74-9109-45e6-8d28-6f2e0b3cbc29</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1270,10 +1270,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>dc6afbe7c37612109687f73ed4013151</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>8e0b3ff9-fb9b-46ab-99be-cb681aad0e5d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1317,10 +1317,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 08:44:09</sys_created_on>
         <sys_id>dc6afbe7c37612109687f73ed4013154</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 12:36:40</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <ui_id>cfb124c2-8616-44c2-bd19-6405e53ca37e</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1606,7 +1606,7 @@
         <internal_name>chh__invoice_processing_case_for_invoice_email</internal_name>
         <label_cache>[{"name":"flow_variable.caller_email","label":"Flow Variables➛Caller Email","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"c58801a3-07d7-452c-9bea-df7d49c4c059"}},{"name":"Inbound Email_1.inbound_email.user_id","label":"Trigger - Inbound Email➛Email Record➛User ID","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_email","column_name":"user_id"},{"name":"664c3577-6bf8-4537-9ce5-40ce786063ed.record","label":"10 - Create Record➛Invoice case Record","reference":"sn_ap_cm_ap_case","reference_display":"Invoice case","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cfb124c2-8616-44c2-bd19-6405e53ca37e.item.attachment","label":"8 - For Each➛Email Attachment Record➛Attachment","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","parent_table_name":"sys_email_attachment","column_name":"attachment"},{"name":"cfb124c2-8616-44c2-bd19-6405e53ca37e.item.attachment.content_type","label":"8 - For Each➛Email Attachment Record➛Attachment➛Content type","reference":"","reference_display":"Content type","type":"string","base_type":"string","parent_table_name":"sys_attachment","column_name":"content_type"},{"name":"c9b8bd8b-0eaf-4911-93b0-24caa0ba9f2c.email_attachments","label":"7 - Look Up Email Attachments➛Email Attachment Records","reference":"sys_email_attachment","reference_display":"Email Attachment","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Inbound Email_1.inbound_email","label":"Trigger - Inbound Email➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{}},{"name":"Inbound Email_1.inbound_email.user","label":"Trigger - Inbound Email➛Email Record➛User","reference":"","reference_display":"User","type":"string","base_type":"string","parent_table_name":"sys_email","column_name":"user"},{"name":"Inbound Email_1.subject","label":"Trigger - Inbound Email➛Subject","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.body_text","label":"Trigger - Inbound Email➛Body Text","type":"string_full_utf8","base_type":"string_full_utf8","attributes":{"test_input_hidden":"true"}},{"name":"Inbound Email_1.inbound_email.user_id.email","label":"Trigger - Inbound Email➛Email Record➛User ID➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Inbound Email_1.inbound_email.body","label":"Trigger - Inbound Email➛Email Record➛Body","reference":"","reference_display":"Body","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body"},{"name":"Inbound Email_1.inbound_email.body_text","label":"Trigger - Inbound Email➛Email Record➛Body text","reference":"","reference_display":"Body text","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body_text"},{"name":"Inbound Email_1.inbound_email.subject","label":"Trigger - Inbound Email➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject"}]</label_cache>
         <master>true</master>
-        <name>CHH - Invoice processing case for Invoice email</name>
+        <name>CCH - Invoice processing case for Invoice email</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="CCH - Invoice processing case for Invoice email">046afbe7c37612109687f73ed4013101</parent_flow>
@@ -1621,15 +1621,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>71ce37afc37612109687f73ed401318b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:22</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=71ce37afc37612109687f73ed401318b"/>
@@ -1638,16 +1638,16 @@
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <name>Inbound Email</name>
         <remote_sys_id/>
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:24</sys_created_on>
         <sys_id>5ece77afc37612109687f73ed4013133</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:25</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:17</sys_updated_on>
         <trigger_definition display_value="Inbound Email">6f0180400b320300f4eb8bf637673ad4</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1701,7 +1701,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1737,7 +1737,7 @@
         <label>From address</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_71ce37afc37612109687f73ed401318b</name>
@@ -1760,14 +1760,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>0ece37afc37612109687f73ed40131d0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1785,7 +1785,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference,uiTypeLabel=Reference</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=reference</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1821,7 +1821,7 @@
         <label>User</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_71ce37afc37612109687f73ed401318b</name>
@@ -1844,14 +1844,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>0ece37afc37612109687f73ed40131d8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1869,7 +1869,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1905,7 +1905,7 @@
         <label>Subject</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_71ce37afc37612109687f73ed401318b</name>
@@ -1928,14 +1928,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>31ce37afc37612109687f73ed40131c1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1953,7 +1953,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1989,7 +1989,7 @@
         <label>Target Table</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_71ce37afc37612109687f73ed401318b</name>
@@ -2012,14 +2012,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:22</sys_created_on>
         <sys_id>35ce37afc37612109687f73ed401318d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:22</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2037,7 +2037,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2073,7 +2073,7 @@
         <label>Target Record</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_71ce37afc37612109687f73ed401318b</name>
@@ -2096,14 +2096,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>4ece37afc37612109687f73ed40131e0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2121,7 +2121,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2157,7 +2157,7 @@
         <label>Inbound Email</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_71ce37afc37612109687f73ed401318b</name>
@@ -2183,14 +2183,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>bdce37afc37612109687f73ed40131c8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2208,7 +2208,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8)</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=string_full_utf8</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -2244,7 +2244,7 @@
         <label>Body Text</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_71ce37afc37612109687f73ed401318b</name>
@@ -2267,14 +2267,14 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:22</sys_created_on>
         <sys_id>f1ce37afc37612109687f73ed40131b9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:22</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2299,17 +2299,17 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <order>7</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>46ce77afc37612109687f73ed4013115</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>c9b8bd8b-0eaf-4911-93b0-24caa0ba9f2c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=46ce77afc37612109687f73ed4013115"/>
@@ -2336,17 +2336,17 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <order>12</order>
         <parent_ui_id>be624c74-9109-45e6-8d28-6f2e0b3cbc29</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:24</sys_created_on>
         <sys_id>5ece77afc37612109687f73ed4013131</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:24</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>f6d7ba57-a924-4437-8f2b-f524469c1125</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=5ece77afc37612109687f73ed4013131"/>
@@ -2425,17 +2425,17 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <order>11</order>
         <parent_ui_id>be624c74-9109-45e6-8d28-6f2e0b3cbc29</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:24</sys_created_on>
         <sys_id>82ce77afc37612109687f73ed401312a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:24</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>26af9bb7-9061-4495-b6f9-0c5d618c3dbc</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=82ce77afc37612109687f73ed401312a"/>
@@ -2500,17 +2500,17 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <order>10</order>
         <parent_ui_id>be624c74-9109-45e6-8d28-6f2e0b3cbc29</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:24</sys_created_on>
         <sys_id>cace77afc37612109687f73ed401311c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:24</sys_updated_on>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>664c3577-6bf8-4537-9ce5-40ce786063ed</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cace77afc37612109687f73ed401311c"/>
@@ -2566,7 +2566,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>caller_email</flow_variables_assigned>
@@ -2580,10 +2580,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>02ce37afc37612109687f73ed40131ff</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>7a1e302c-af63-47fd-9ef2-418202b59b28</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2613,7 +2613,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2627,10 +2627,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>46ce77afc37612109687f73ed401310c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>be624c74-9109-45e6-8d28-6f2e0b3cbc29</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2661,7 +2661,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variable/>
         <flow_variables_assigned>caller_email</flow_variables_assigned>
@@ -2675,10 +2675,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>4ace77afc37612109687f73ed4013105</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>8e0b3ff9-fb9b-46ab-99be-cb681aad0e5d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2708,7 +2708,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2722,10 +2722,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>4ace77afc37612109687f73ed4013108</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>cfb124c2-8616-44c2-bd19-6405e53ca37e</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2756,7 +2756,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2770,10 +2770,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>4ece37afc37612109687f73ed40131fb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>f44a56f4-67cf-496c-8531-3ebe56a94316</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2804,7 +2804,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2817,10 +2817,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>8ace77afc37612109687f73ed4013102</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>c79683a7-34a4-4a20-bda2-eb7e708d5ac0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2838,7 +2838,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2851,10 +2851,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>8ece37afc37612109687f73ed40131f8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>64cfaad9-c42e-40c5-91e3-7d4091a70c6e</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2872,7 +2872,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
+        <flow display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2886,10 +2886,10 @@
         <sys_created_by>giorgian.vatra</sys_created_by>
         <sys_created_on>2025-01-06 09:03:23</sys_created_on>
         <sys_id>c6ce37afc37612109687f73ed40131f4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope/>
-        <sys_updated_by>giorgian.vatra</sys_updated_by>
-        <sys_updated_on>2025-01-06 09:03:23</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 13:46:15</sys_updated_on>
         <ui_id>1aa9edf6-0acb-4b3d-987d-61192204e133</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2953,7 +2953,7 @@
         <label>Caller Email</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="CHH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
+        <model display_value="CCH - Invoice processing case for Invoice email">71ce37afc37612109687f73ed401318b</model>
         <model_id>71ce37afc37612109687f73ed401318b</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_71ce37afc37612109687f73ed401318b</name>

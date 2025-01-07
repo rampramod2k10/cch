@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>cch_doc_task_processing_through_edge</internal_name>
+        <label_cache>[{"name":"{{action.attachment}}","label":"action➛attachment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>d40595fbc37e12109687f73ed40131ff</master_snapshot>
+        <name>CCH Doc Task Processing through Edge</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:14:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85c3957bc37e12109687f73ed40131f1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>CCH Doc Task Processing through Edge</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_85c3957bc37e12109687f73ed40131f1</sys_update_name>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:07</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=85c3957bc37e12109687f73ed40131f1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=85c3957bc37e12109687f73ed40131f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>85c3957bc37e12109687f73ed40131f1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>7ce415fbc37e12109687f73ed401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">74e415fbc37e12109687f73ed4013106</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>85c3957bc37e12109687f73ed40131f1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>b8e415fbc37e12109687f73ed401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">34e415fbc37e12109687f73ed401310b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_85c3957bc37e12109687f73ed40131f1^id=85c3957bc37e12109687f73ed40131f1"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=85c3957bc37e12109687f73ed40131f1^sys_idNOT IN6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CCH Doc Task Processing through Edge">85c3957bc37e12109687f73ed40131f1</action>
+        <cid>7c3791ea-f69e-4b06-8ea4-e4c6e8e1ffdd</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>6ea4d5bbc37e12109687f73ed401319d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:58</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>26a4ddbbc37e12109687f73ed4013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>2aa4ddbbc37e12109687f73ed4013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>30e415fbc37e12109687f73ed4013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>62a4ddbbc37e12109687f73ed4013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>66a4ddbbc37e12109687f73ed4013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>16d1d5b7c37e12109687f73ed40131b7</value>
+        <variable display_value="REST Message">b79bea415b101110ab933520b881c737</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>7ce415fbc37e12109687f73ed4013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:58</sys_created_on>
+        <sys_id>9ef455fbc37e12109687f73ed40131fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:58</sys_updated_on>
+        <value>https://google.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>a2a4ddbbc37e12109687f73ed4013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>e00215f7c37e12109687f73ed40131f9</value>
+        <variable display_value="REST Message Function">35bb6e415b101110ab933520b881c752</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>aea4ddbbc37e12109687f73ed4013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>b8e415fbc37e12109687f73ed4013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <value>92c451fbc37e12109687f73ed40131b7</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>e6a4ddbbc37e12109687f73ed4013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>from_snrestmessage</value>
+        <variable display_value="Build Request">bb61fcd3c7312300a150effeeb97638e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>e6a4ddbbc37e12109687f73ed4013115</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>eaa4ddbbc37e12109687f73ed4013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>eea4ddbbc37e12109687f73ed4013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6ea4d5bbc37e12109687f73ed401319d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>f4e415fbc37e12109687f73ed4013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_6ea4d5bbc37e12109687f73ed401319d"/>
+    <sys_hub_action_input action="delete_multiple" query="model=85c3957bc37e12109687f73ed40131f1^sys_idNOT INeea4d5bbc37e12109687f73ed4013197"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=11623a30-95e9-4b99-aa98-c030199e7be6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>attachment</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CCH Doc Task Processing through Edge">85c3957bc37e12109687f73ed40131f1</model>
+        <model_id>85c3957bc37e12109687f73ed40131f1</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_85c3957bc37e12109687f73ed40131f1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:36</sys_created_on>
+        <sys_id>eea4d5bbc37e12109687f73ed4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eea4d5bbc37e12109687f73ed4013197"/>
+    <sys_hub_action_output action="delete_multiple" query="model=85c3957bc37e12109687f73ed40131f1^sys_idNOT IN34e415fbc37e12109687f73ed401310b,74e415fbc37e12109687f73ed4013106"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fa4b6e95-e6c2-4c5b-8867-f9f4eada44d8,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CCH Doc Task Processing through Edge">85c3957bc37e12109687f73ed40131f1</model>
+        <model_id>85c3957bc37e12109687f73ed40131f1</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_85c3957bc37e12109687f73ed40131f1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>34e415fbc37e12109687f73ed401310b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=34e415fbc37e12109687f73ed401310b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=34e415fbc37e12109687f73ed401310b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3d72cce4-c1fd-40c0-bb65-dd552c20a59c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CCH Doc Task Processing through Edge">85c3957bc37e12109687f73ed40131f1</model>
+        <model_id>85c3957bc37e12109687f73ed40131f1</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_85c3957bc37e12109687f73ed40131f1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>74e415fbc37e12109687f73ed4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=74e415fbc37e12109687f73ed4013106"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=74e415fbc37e12109687f73ed4013106"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=85c3957bc37e12109687f73ed40131f1"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=85c3957bc37e12109687f73ed40131f1^sys_idNOT INa6a4ddbbc37e12109687f73ed401311b"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="CCH Doc Task Processing through Edge">85c3957bc37e12109687f73ed40131f1</action_type_id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>a6a4ddbbc37e12109687f73ed401311b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a6a4ddbbc37e12109687f73ed401311b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_85c3957bc37e12109687f73ed40131f1^sys_idNOT INaea4d5bbc37e12109687f73ed401319b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment</element>
+        <help/>
+        <hint/>
+        <label>attachment</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_85c3957bc37e12109687f73ed40131f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:18:37</sys_created_on>
+        <sys_id>aea4d5bbc37e12109687f73ed401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:18:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_85c3957bc37e12109687f73ed40131f1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_85c3957bc37e12109687f73ed40131f1^sys_idNOT IN74e415fbc37e12109687f73ed401310a,bce415fbc37e12109687f73ed401311c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_85c3957bc37e12109687f73ed40131f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>74e415fbc37e12109687f73ed401310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_85c3957bc37e12109687f73ed40131f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:19:35</sys_created_on>
+        <sys_id>bce415fbc37e12109687f73ed401311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:19:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_85c3957bc37e12109687f73ed40131f1"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=85c3957bc37e12109687f73ed40131f1^sys_idNOT IN3405d5fbc37e12109687f73ed40131b7"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="CCH Doc Task Processing through Edge">85c3957bc37e12109687f73ed40131f1</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"3405d5fbc37e12109687f73ed40131b7","name":"plan","plan_signature":null}}</plan>
+        <snapshot>ac05d5fbc37e12109687f73ed401312c</snapshot>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3405d5fbc37e12109687f73ed40131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:08</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cch_doc_task_processing_through_edge</internal_name>
+        <label_cache>[{"name":"{{action.attachment}}","label":"action➛attachment","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>CCH Doc Task Processing through Edge</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="CCH Doc Task Processing through Edge">85c3957bc37e12109687f73ed40131f1</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d40595fbc37e12109687f73ed40131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=d40595fbc37e12109687f73ed40131ff"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d40595fbc37e12109687f73ed40131ff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>d40595fbc37e12109687f73ed40131ff</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:07</sys_created_on>
+        <sys_id>2c05d5fbc37e12109687f73ed401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:07</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">e805d5fbc37e12109687f73ed4013123</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>d40595fbc37e12109687f73ed40131ff</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:07</sys_created_on>
+        <sys_id>ec05d5fbc37e12109687f73ed401312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:07</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">d405d5fbc37e12109687f73ed401311f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_d40595fbc37e12109687f73ed40131ff^id=d40595fbc37e12109687f73ed40131ff"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=d40595fbc37e12109687f73ed40131ff^sys_idNOT IN5405d5fbc37e12109687f73ed4013108"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CCH Doc Task Processing through Edge">d40595fbc37e12109687f73ed40131ff</action>
+        <cid>7c3791ea-f69e-4b06-8ea4-e4c6e8e1ffdd</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>5405d5fbc37e12109687f73ed4013108</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5405d5fbc37e12109687f73ed4013108"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>1005d5fbc37e12109687f73ed401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>1405d5fbc37e12109687f73ed4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>92c451fbc37e12109687f73ed40131b7</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>1805d5fbc37e12109687f73ed4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>from_snrestmessage</value>
+        <variable display_value="Build Request">bb61fcd3c7312300a150effeeb97638e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>1c05d5fbc37e12109687f73ed401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>5005d5fbc37e12109687f73ed4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>e00215f7c37e12109687f73ed40131f9</value>
+        <variable display_value="REST Message Function">35bb6e415b101110ab933520b881c752</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>5805d5fbc37e12109687f73ed401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>https://google.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>5c05d5fbc37e12109687f73ed4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>9005d5fbc37e12109687f73ed401311b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>9405d5fbc37e12109687f73ed401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>9805d5fbc37e12109687f73ed4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>9c05d5fbc37e12109687f73ed4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>d005d5fbc37e12109687f73ed401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>90</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>d405d5fbc37e12109687f73ed4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>16d1d5b7c37e12109687f73ed40131b7</value>
+        <variable display_value="REST Message">b79bea415b101110ab933520b881c737</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>d805d5fbc37e12109687f73ed4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5405d5fbc37e12109687f73ed4013108</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>dc05d5fbc37e12109687f73ed401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=5405d5fbc37e12109687f73ed4013108"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=5405d5fbc37e12109687f73ed4013108"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=5405d5fbc37e12109687f73ed4013108"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=5405d5fbc37e12109687f73ed4013108"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5405d5fbc37e12109687f73ed4013108"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_5405d5fbc37e12109687f73ed4013108"/>
+    <sys_hub_action_input action="delete_multiple" query="model=d40595fbc37e12109687f73ed40131ff^sys_idNOT IN1005d5fbc37e12109687f73ed4013103"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=11623a30-95e9-4b99-aa98-c030199e7be6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>attachment</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CCH Doc Task Processing through Edge">d40595fbc37e12109687f73ed40131ff</model>
+        <model_id>d40595fbc37e12109687f73ed40131ff</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_d40595fbc37e12109687f73ed40131ff</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>1005d5fbc37e12109687f73ed4013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1005d5fbc37e12109687f73ed4013103"/>
+    <sys_hub_action_output action="delete_multiple" query="model=d40595fbc37e12109687f73ed40131ff^sys_idNOT INd405d5fbc37e12109687f73ed401311f,e805d5fbc37e12109687f73ed4013123"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3d72cce4-c1fd-40c0-bb65-dd552c20a59c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CCH Doc Task Processing through Edge">d40595fbc37e12109687f73ed40131ff</model>
+        <model_id>d40595fbc37e12109687f73ed40131ff</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_d40595fbc37e12109687f73ed40131ff</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>d405d5fbc37e12109687f73ed401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d405d5fbc37e12109687f73ed401311f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d405d5fbc37e12109687f73ed401311f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fa4b6e95-e6c2-4c5b-8867-f9f4eada44d8,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="CCH Doc Task Processing through Edge">d40595fbc37e12109687f73ed40131ff</model>
+        <model_id>d40595fbc37e12109687f73ed40131ff</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_d40595fbc37e12109687f73ed40131ff</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:07</sys_created_on>
+        <sys_id>e805d5fbc37e12109687f73ed4013123</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e805d5fbc37e12109687f73ed4013123"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e805d5fbc37e12109687f73ed4013123"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d40595fbc37e12109687f73ed40131ff"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=d40595fbc37e12109687f73ed40131ff^sys_idNOT INe805d5fbc37e12109687f73ed401312c"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="CCH Doc Task Processing through Edge">d40595fbc37e12109687f73ed40131ff</action_type_id>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:07</sys_created_on>
+        <sys_id>e805d5fbc37e12109687f73ed401312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:07</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e805d5fbc37e12109687f73ed401312c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_d40595fbc37e12109687f73ed40131ff^sys_idNOT IN9405d5fbc37e12109687f73ed4013106"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment</element>
+        <help/>
+        <hint/>
+        <label>attachment</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_d40595fbc37e12109687f73ed40131ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:06</sys_created_on>
+        <sys_id>9405d5fbc37e12109687f73ed4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_d40595fbc37e12109687f73ed40131ff"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_d40595fbc37e12109687f73ed40131ff^sys_idNOT IN6005d5fbc37e12109687f73ed4013128,6c05d5fbc37e12109687f73ed4013122"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d40595fbc37e12109687f73ed40131ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:07</sys_created_on>
+        <sys_id>6005d5fbc37e12109687f73ed4013128</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_d40595fbc37e12109687f73ed40131ff</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-06 15:20:07</sys_created_on>
+        <sys_id>6c05d5fbc37e12109687f73ed4013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-06 15:20:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_d40595fbc37e12109687f73ed40131ff"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>85c3957bc37e12109687f73ed40131f1</sys_id>
+        <latest_snapshot>d40595fbc37e12109687f73ed40131ff</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch10-hotfix2b-10-15-2024_11-08-2024_1215.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>abinav.ramesh</sys_created_by>
+        <sys_created_on>2025-01-07 15:20:04</sys_created_on>
+        <sys_id>2d9e9a04c38792109687f73ed40131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideRecord.setWorkflow</sys_name>
+        <sys_package display_value="CCH EDGE OCR Integration" source="x_742494_cch_edge">a6283f27c37612109687f73ed401315e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CCH EDGE OCR Integration">a6283f27c37612109687f73ed401315e</sys_scope>
+        <sys_update_name>sys_scope_privilege_2d9e9a04c38792109687f73ed40131aa</sys_update_name>
+        <sys_updated_by>abinav.ramesh</sys_updated_by>
+        <sys_updated_on>2025-01-07 15:20:04</sys_updated_on>
+        <target_name>GlideRecord.setWorkflow</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>
